@@ -1,0 +1,31 @@
+.contact_section {
+    height: 50vh;
+    width: auto;
+    background-color: #f1eae6;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(135, 130, 130);
+}
+
+.contact_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_head{
+    font-weight: 700;
+}
+
+.con {
+    height: 40vh;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 120px;
+    box-shadow: 10px 10px 35px black;
+    text-align: center;
+}

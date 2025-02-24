@@ -1,35 +1,28 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Navbar from './components/navbar/NavbarComponent'
+import Navbar from './components/navbar/NavbarComponent';
 import Home from './pages/Home'
-import Council from './pages/Council'
-import Gallery from './pages/Gallery'
-import Cultural from './pages/Cultural'
-import ESports from './pages/ESports'
-import Special from './pages/Special'
-import Sponsors from './pages/Sponsors'
-import Sports from './pages/Sports'
-import Technical from './pages/Technical'
-
+import About from './pages/About'
+import Admission from './pages/Admission'
+import Facilities from './pages/Facilities'
+import Teacher from './pages/Teacher'
+import Contact from './pages/Contact'
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+      <Router>
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/council' element={<Council />} />
-          <Route path='/gallery' element={<Gallery />} />
-          <Route path='/sponsors' element={<Sponsors />} />
-          <Route path='/cultural' element={<Cultural />} />
-          <Route path='/esports' element={<ESports />} />
-          <Route path='/sports' element={<Sports />} />
-          <Route path='/special' element={<Special />} />
-          <Route path='/technical' element={<Technical />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/admission' element={<Admission />} />
+          <Route path='/facilities' element={<Facilities />} />
+          <Route path='/teacher' element={<Teacher />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }
